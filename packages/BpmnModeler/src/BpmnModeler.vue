@@ -37,7 +37,6 @@ export default {
     }
   },
   async mounted() {
-    console.log(this.propertiesPanel === '')
     let canvas = this.$refs["canvas"];
     let additionalModules = [
       customTranslateModule,
@@ -143,7 +142,6 @@ export default {
         if (xml) {
           try {
             const result = await this.modeler.importXML(xml);
-            console.log('rendered');
             resolve()
           } catch (err) {
             reject(err);

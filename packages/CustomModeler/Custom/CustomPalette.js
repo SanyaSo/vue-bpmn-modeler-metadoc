@@ -66,7 +66,10 @@ PaletteProvider.prototype.getPaletteEntries = function(/*element*/) {
     ),
     'create.user-task': createAction(
       'bpmn:UserTask', 'task', 'bpmn-icon-user-task'
-    )
+    ),
+	'create.service-task': createAction(
+	  'bpmn:ServiceTask', 'task', 'bpmn-icon-service-task'
+	),
   });
 
   return actions;
